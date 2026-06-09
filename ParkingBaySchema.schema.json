@@ -1,0 +1,193 @@
+{
+  "schema_name": "ParkingBaysTransactions",
+  "spatial_transactions": {
+    "schema_name": "ParkingBaysSpatialTransactions",
+    "dataset_type": "feature_class",
+    "geometry": {
+      "shape_type": "Polygon"
+    },
+    "fields": {
+      "record_id": {
+        "field_name": "record_id",
+        "required": true
+      },
+      "transaction_group_id": {
+        "field_name": "transaction_group_id",
+        "required": true
+      },
+      "feature_uid": {
+        "field_name": "feature_uid",
+        "required": true
+      },
+      "transaction_type": {
+        "field_name": "transaction_type",
+        "required": true
+      },
+      "transaction_date": {
+        "field_name": "transaction_date",
+        "required": true
+      },
+      "valid_from": {
+        "field_name": "valid_from",
+        "required": true
+      },
+      "valid_to": {
+        "field_name": "valid_to",
+        "required": false
+      },
+      "building": {
+        "field_name": "building",
+        "required": true
+      },
+      "level": {
+        "field_name": "level_",
+        "required": true
+      },
+      "room": {
+        "field_name": "room",
+        "required": true
+      },
+      "type": {
+        "field_name": "type",
+        "required": false
+      },
+      "source_dwg": {
+        "field_name": "source_dwg",
+        "required": true
+      },
+      "transaction_status": {
+        "field_name": "transaction_status",
+        "required": true
+      },
+      "supersedes_record_id": {
+        "field_name": "supersedes_record_id",
+        "required": false
+      },
+      "superseded_by_record_id": {
+        "field_name": "superseded_by_record_id",
+        "required": false
+      },
+      "amend_reason": {
+        "field_name": "amend_reason",
+        "required": false
+      },
+      "notes": {
+        "field_name": "notes",
+        "required": false
+      },
+      "shape": {
+        "field_name": "SHAPE@",
+        "required": true,
+        "token": true
+      }
+    },
+    "insert_order": [
+      "record_id",
+      "transaction_group_id",
+      "feature_uid",
+      "transaction_type",
+      "transaction_date",
+      "valid_from",
+      "valid_to",
+      "building",
+      "level",
+      "room",
+      "type",
+      "source_dwg",
+      "transaction_status",
+      "supersedes_record_id",
+      "superseded_by_record_id",
+      "amend_reason",
+      "notes",
+      "shape"
+    ]
+  },
+  "attribute_transactions": {
+    "schema_name": "ParkingBaysAttributeTransactions",
+    "dataset_type": "table",
+    "fields": {
+      "record_id": {
+        "field_name": "record_id",
+        "required": true
+      },
+      "transaction_group_id": {
+        "field_name": "transaction_group_id",
+        "required": true
+      },
+      "feature_uid": {
+        "field_name": "feature_uid",
+        "required": true
+      },
+      "transaction_type": {
+        "field_name": "transaction_type",
+        "required": true
+      },
+      "transaction_status": {
+        "field_name": "transaction_status",
+        "required": true
+      },
+      "transaction_date": {
+        "field_name": "transaction_date",
+        "required": true
+      },
+      "valid_from": {
+        "field_name": "valid_from",
+        "required": true
+      },
+      "valid_to": {
+        "field_name": "valid_to",
+        "required": false
+      },
+      "supersedes_record_id": {
+        "field_name": "supersedes_record_id",
+        "required": false
+      },
+      "superseded_by_record_id": {
+        "field_name": "superseded_by_record_id",
+        "required": false
+      },
+      "amend_reason": {
+        "field_name": "amend_reason",
+        "required": false
+      },
+      "notes": {
+        "field_name": "notes",
+        "required": false
+      },
+      "status": {
+        "field_name": "status",
+        "required": false
+      },
+      "parkaid_zone": {
+        "field_name": "parkaid_zone",
+        "required": false
+      },
+      "source_dwg": {
+        "field_name": "source_dwg",
+        "required": false
+      },
+      "baytype": {
+        "field_name": "baytype",
+        "required": false
+      }
+    },
+    "insert_order": [
+      "record_id",
+      "transaction_group_id",
+      "feature_uid",
+      "transaction_type",
+      "transaction_status",
+      "transaction_date",
+      "valid_from",
+      "valid_to",
+      "supersedes_record_id",
+      "superseded_by_record_id",
+      "amend_reason",
+      "notes",
+      "status",
+      "parkaid_zone",
+      "source_dwg",
+      "baytype"
+    ]
+  }
+}
